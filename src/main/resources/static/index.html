@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agenda de Contatos</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<main class="app-shell">
+    <header class="hero">
+        <h1>Agenda de Contatos</h1>
+        <p class="subtitle">Cadastro e gerenciamento de contatos com Spring Boot, JPA e MySQL.</p>
+    </header>
+    <section class="grid">
+        <article class="card">
+            <h2>Novo Contato</h2>
+            <form id="contato-form" class="form">
+                <label for="nome">Nome</label>
+                <input id="nome" type="text" required>
+                <label for="telefone">Telefone</label>
+                <input id="telefone" type="text" required>
+                <button type="submit" id="btn-submit">Cadastrar</button>
+                <button type="button" id="btn-cancelar" class="secondary" style="display:none">Cancelar</button>
+            </form>
+        </article>
+        <article class="card">
+            <div class="output-header">
+                <h2>Resposta</h2>
+                <span id="status-pill" class="status neutral">Aguardando...</span>
+            </div>
+            <pre id="response-box">Envie o formulário para ver o retorno.</pre>
+            <hr>
+            <button id="btn-listar" type="button">Listar Contatos</button>
+            <h3>Contatos Cadastrados</h3>
+            <ul id="lista-contatos" class="lista-contatos"></ul>
+        </article>
+    </section>
+</main>
+<script src="app.js"></script>
+</body>
+</html>
