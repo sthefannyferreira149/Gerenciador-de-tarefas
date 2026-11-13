@@ -27,9 +27,7 @@ public class Tarefa {
     @Column(name = "data_criacao", updatable = false)
     private LocalDateTime dataCriacao;
 
-    @UpdateTimestamp
-    @Column(name = "data_atualizacao")
-    private LocalDateTime dataAtualizacao;
+    private LocalDate dataEntrega;
 
     public Long getId() {
         return id;
